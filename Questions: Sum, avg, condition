@@ -1,0 +1,38 @@
+import java.util.Scanner;  // Corrected import statement
+
+class Main {
+    public static void main(String[] args) {
+        int s1, s2, s3, s4, s5;
+        Scanner sc = new Scanner(System.in);  // Corrected 'scanner' to 'Scanner'
+    
+        System.out.println("Enter marks for s1:");
+        s1 = sc.nextInt();
+        
+        System.out.println("Enter marks for s2:");
+        s2 = sc.nextInt();
+        
+        System.out.println("Enter marks for s3:");
+        s3 = sc.nextInt();
+        
+        System.out.println("Enter marks for s4:");
+        s4 = sc.nextInt();
+        
+        System.out.println("Enter marks for s5:");
+        s5 = sc.nextInt();
+        
+        int sum = s1 + s2 + s3 + s4 + s5;
+        double average = sum / 5.0;
+        
+        if (average > 40 && average < 60) {
+            System.out.println("3rd division");
+        } else if (average >= 60 && average < 80) {
+            System.out.println("2nd division");
+        } else if (average >= 80 && average <= 100) {
+            System.out.println("1st division");
+        } else {
+            System.out.println("Fail");
+        }
+        
+        sc.close();  // Close the scanner
+    }
+}
