@@ -1,0 +1,12 @@
+ class Test {
+    public static void main(String[] args) {
+        int a, b;  // Declare a and b
+
+        for (a = 4; a >= 1; a--) {
+            for (b = 4; b >= 1; b--) {
+                System.out.print(b + " "); // Print b with a space
+            }
+            System.out.println(); // New line after each row
+        }
+    }
+}
