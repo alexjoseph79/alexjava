@@ -1,0 +1,19 @@
+import java.util.Scanner; // Corrected the import statement
+
+class Main {
+    public static void main(String[] args) {
+        int a = 10, b = 8;  // Variable initialization
+        
+        Scanner sc = new Scanner(System.in);  // Corrected Scanner object creation
+        
+        // Read input values for a and b
+        System.out.println("Enter the first number:");
+        a = sc.nextInt(); // Read the first number
+        
+        System.out.println("Enter the second number:");
+        b = sc.nextInt(); // Read the second number
+        
+        int c = a + b; // Calculate the sum
+        System.out.println("Sum is = " + c); // Output the sum
+    }
+}
